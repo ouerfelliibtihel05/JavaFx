@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="620.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestion.projet.LoginController">
+   <right>
+      <AnchorPane prefHeight="493.0" prefWidth="338.0" BorderPane.alignment="CENTER">
+         <children>
+            <PasswordField fx:id="password" layoutX="52.0" layoutY="207.0" prefHeight="42.0" prefWidth="188.0" promptText="Password" style="-fx-background-color: transparente; -fx-border-color: #cf3535; -fx-border-width: 2px 2px 2px 2px;" />
+            <TextField fx:id="name" layoutX="52.0" layoutY="85.0" prefHeight="45.0" prefWidth="187.0" promptText="User Name" style="-fx-background-color: transparente; -fx-border-color: #cf3535; -fx-border-width: 2px 2px 2px 2px;" />
+            <Button fx:id="login" layoutX="46.0" layoutY="325.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="72.0" style="-fx-background-color: #cf3535;" text="login" textFill="#f7f1f1">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+            <Label layoutX="18.0" layoutY="49.0" prefHeight="36.0" prefWidth="274.0" textFill="#3294ba">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="loginMessageLabel" layoutX="146.0" layoutY="333.0" />
+
+            <Button fx:id="register" layoutX="174.0" layoutY="324.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="77.0" style="-fx-background-color: #cf3535;" text="signin" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

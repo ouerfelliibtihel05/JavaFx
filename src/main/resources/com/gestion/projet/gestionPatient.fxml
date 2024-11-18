@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestion.projet.GestionPatientController">
+    <center>
+        <SplitPane prefHeight="375.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #ffffff;">
+                    <children>
+                        <HBox layoutX="416.0" layoutY="7.0" prefHeight="44.0" prefWidth="222.0">
+                            <children>
+                                <TextField fx:id="searchNom" prefHeight="26.0" prefWidth="139.0" />
+                                <Button fx:id="buttonSearch" mnemonicParsing="false" prefHeight="26.0" prefWidth="82.0" text="recherche " />
+                            </children>
+                        </HBox>
+                        <TableView fx:id="tablepatients" layoutY="1.0" prefHeight="353.0" prefWidth="368.0">
+                            <columns>
+                                <TableColumn fx:id="colonnenom" prefWidth="94.0" text="Nom" />
+                                <TableColumn fx:id="colonneprenom" prefWidth="139.0" text="Prénom" />
+                                <TableColumn fx:id="colonnetel" prefWidth="133.5999755859375" text="Téléphone" />
+                            </columns>
+                        </TableView>
+                        <TextField fx:id="cin" layoutX="460.0" layoutY="136.0" prefHeight="31.0" prefWidth="88.0" promptText="Cin" style="-fx-background-color: transparent; -fx-border-color: #d7441b; -fx-border-width: 2px 2px 2px 2px;">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="nomfamille" layoutX="424.0" layoutY="184.0" prefHeight="31.0" prefWidth="127.0" promptText="Nom de Famille" style="-fx-background-color: transparent; -fx-border-color: #d7441b; -fx-border-width: 2px 2px 2px 2px;">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="prenom" layoutX="430.0" layoutY="229.0" prefHeight="31.0" prefWidth="148.0" promptText="Prénom" style="-fx-background-color: transparent; -fx-border-color: #d7441b; -fx-border-width: 2px 2px 2px 2px;">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="tel" layoutX="441.0" layoutY="283.0" prefHeight="31.0" prefWidth="173.0" promptText="Téléphone" style="-fx-background-color: transparent; -fx-border-color: #d7441b; -fx-border-width: 2px 2px 2px 2px;">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </TextField>
+                        <RadioButton fx:id="masculin" layoutX="488.0" layoutY="346.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="M" />
+                        <RadioButton fx:id="feminin" layoutX="551.0" layoutY="346.0" mnemonicParsing="false" text="F" />
+
+                        <Button fx:id="buttonAdd" layoutX="207.0" layoutY="405.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="26.0" prefWidth="79.0" style="-fx-background-color: #d7441b;" text="ajouter" textFill="#292a2b" />
+                        <Button fx:id="buttonDelete" layoutX="303.0" layoutY="405.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="97.0" style="-fx-background-color: #d7441b;" text="supprimer" textFill="#000000" />
+                        <Button fx:id="buttonUpdate" layoutX="433.0" layoutY="403.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="88.0" style="-fx-background-color: #d7441b;" text="edit" textFill="#000000" />
+                        <Button fx:id="buttonGeneratePDF" layoutX="578.0" layoutY="396.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: #d7441b;" text="Imprimer" textFill="WHITE" />
+                  <Label layoutX="528.0" layoutY="51.0" prefHeight="27.0" prefWidth="125.0" text="PATIENT" textFill="#d7441b">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+
+
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </center>
+</BorderPane>

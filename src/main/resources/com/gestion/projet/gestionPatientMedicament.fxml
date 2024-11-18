@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestion.projet.PatientMedicamentController">
+   <children>
+      <TableView fx:id="tablemedPat" layoutX="300.0" layoutY="11.0" prefHeight="380.0" prefWidth="290.0">
+         <columns>
+            <TableColumn fx:id="colonnePatCin" prefWidth="147.19997787475586" text="Patient_cin" />
+            <TableColumn fx:id="colonneMedRef" prefWidth="142.40003967285156" text="Medicament_ref" />
+         </columns>
+      </TableView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="32.0" layoutY="36.0" prefHeight="28.0" prefWidth="222.0" text="Medicament Patient" textFill="#d7441b">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="PatientComboBox" layoutX="24.0" layoutY="95.0" prefWidth="150.0" promptText="Patient " style="-fx-background-color: tansparente; -fx-border-color: #d7441b; -fx-border-width: 2px 2px 2px 2px;">
+
+      </ComboBox>
+      <Button fx:id="buttonAdd" layoutX="214.0" layoutY="113.0" mnemonicParsing="false" style="-fx-background-color: #d7441b;" text="Ajouter" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonUpdate" layoutX="199.0" layoutY="189.0" mnemonicParsing="false" style="-fx-background-color: #d7441b;" text="Mettre à jour" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="buttonDelete" layoutX="216.0" layoutY="253.0" mnemonicParsing="false" style="-fx-background-color: #d7441b;" text="Supprimer" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <ComboBox fx:id="medicamentComboBox" layoutX="24.0" layoutY="146.0" prefWidth="150.0" promptText="Medicament" style="-fx-background-color: tansparente; -fx-border-color: #d7441b; -fx-border-width: 2px 2px 2px 2px;" />
+   </children>
+</AnchorPane>

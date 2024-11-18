@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="507.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestion.projet.Accueil">
+   <children>
+      <ImageView fitHeight="519.0" fitWidth="810.0" layoutY="1.0" />
+      <ImageView fx:id="logout" fitHeight="42.0" fitWidth="49.0" layoutX="754.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/logout.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imagePatients" fitHeight="72.0" fitWidth="115.0" layoutX="28.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/hoo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageMedecins" fitHeight="87.0" fitWidth="101.0" layoutX="38.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/cha.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageMedicaments" fitHeight="87.0" fitWidth="87.0" layoutX="38.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/medp.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageChambre" fitHeight="101.0" fitWidth="100.0" layoutX="32.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/patient.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="245.0" fitWidth="333.0" layoutX="368.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/ttttt.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="144.0" layoutY="59.0" text="Médecin" />
+      <Label layoutX="144.0" layoutY="172.0" text="Patient" />
+      <Label layoutX="168.0" layoutY="281.0" text="Médicament" />
+      <Label layoutX="187.0" layoutY="404.0" text="PatMed" />
+   </children>
+</AnchorPane>

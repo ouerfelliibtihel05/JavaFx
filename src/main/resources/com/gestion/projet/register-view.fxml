@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="337.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestion.projet.PersonnelController">
+    <children>
+        <AnchorPane layoutY="1.0" prefHeight="394.0" prefWidth="288.0">
+         <children>
+              <Label layoutX="49.0" prefHeight="59.0" prefWidth="189.0" text="Créer un Compte" textFill="#cf3535">
+                  <font>
+                      <Font name="Algerian" size="22.0" />
+                  </font>
+              </Label>
+              <TextField fx:id="cinField" layoutX="14.0" layoutY="104.0" prefHeight="28.0" prefWidth="96.0" promptText="CIN" style="-fx-background-color: transparent; -fx-border-color: #cf3535; -fx-border-width: 2px 2px 2px 2px;" />
+              <TextField fx:id="nomField" layoutX="153.0" layoutY="104.0" prefHeight="28.0" prefWidth="96.0" promptText="Nom" style="-fx-background-color: transparent; -fx-border-color: #cf3535; -fx-border-width: 2px 2px 2px 2px;" />
+              <TextField fx:id="prenomField" layoutX="14.0" layoutY="154.0" prefHeight="28.0" prefWidth="96.0" promptText="Prenom" style="-fx-background-color: transparent; -fx-border-color: #cf3535; -fx-border-width: 2px 2px 2px 2px;" />
+              <TextField fx:id="loginField" layoutX="14.0" layoutY="208.0" prefHeight="30.0" prefWidth="96.0" promptText="login" style="-fx-background-color: transparent; -fx-border-color: #cf3535; -fx-border-width: 2px 2px 2px 2px;" />
+              <PasswordField fx:id="passwordField" layoutX="14.0" layoutY="257.0" prefHeight="30.0" prefWidth="96.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #cf3535; -fx-border-width: 2px 2px 2px 2px;" />
+              <TextField fx:id="fonctionnaliteField" layoutX="145.0" layoutY="154.0" prefHeight="28.0" prefWidth="111.0" promptText="Fonctionnalite" style="-fx-background-color: transparent; -fx-border-color: #cf3535; -fx-border-width: 2px 2px 2px 2px;" />
+              <Button fx:id="btnRegister" layoutX="87.0" layoutY="350.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: #cf3535;" text="Créer" textFill="WHITE" />
+         </children>
+        </AnchorPane>
+        <Label fx:id="registrationMessageLabel" layoutX="345.0" layoutY="375.0" prefHeight="17.0" prefWidth="200.0" />
+    </children>
+</AnchorPane>

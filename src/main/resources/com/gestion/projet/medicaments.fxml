@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestion.projet.MedicamentsController">
+    <center>
+        <SplitPane prefHeight="375.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #ffffff;">
+                    <children>
+                        <HBox layoutX="411.0" layoutY="11.0" prefHeight="44.0" prefWidth="245.0">
+                            <children>
+                                <TextField fx:id="searchLibelle" />
+                                <Button fx:id="buttonSearch" mnemonicParsing="false" text="Recherche" />
+                            </children>
+                        </HBox>
+
+                        <TableView fx:id="tablemedicaments" layoutY="138.0" prefHeight="320.0" prefWidth="342.0">
+                            <columns>
+                                <TableColumn fx:id="colonneRef" prefWidth="98.4000244140625" text="Reference" />
+                                <TableColumn fx:id="colonneLibelle" prefWidth="113.5999755859375" text="Libellé" />
+                                <TableColumn fx:id="colonnePrix" prefWidth="128.79996337890623" text="Prix" />
+                            </columns>
+                        </TableView>
+                        <TextField fx:id="libelle" layoutX="482.0" layoutY="133.0" prefHeight="31.0" prefWidth="157.0" promptText="Libellé" style="-fx-background-color: transparent; -fx-border-color: #d7441b; -fx-border-width: 2px 2px 2px 2px;">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="prix" layoutX="491.0" layoutY="202.0" prefHeight="31.0" prefWidth="158.0" promptText="Prix" style="-fx-background-color: transparent; -fx-border-color: #d7441b; -fx-border-width: 2px 2px 2px 2px;">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </TextField>
+
+                        <Button fx:id="buttonAdd" layoutX="368.0" layoutY="120.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="26.0" prefWidth="67.0" style="-fx-background-color: #d7441b;" text="Ajouter" textFill="WHITE" />
+                        <Button fx:id="buttonDelete" layoutX="396.0" layoutY="205.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="77.0" style="-fx-background-color: #d7441b;" text="Supprimer" textFill="#ffffffd6" />
+                        <Button fx:id="buttonUpdate" layoutX="402.0" layoutY="272.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #d7441b;" text="Mettre à jour" textFill="WHITE" />
+                        <ImageView fitHeight="46.0" fitWidth="55.0" layoutX="491.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/medicaments.jpg" />
+                            </image>
+                        </ImageView>
+                        <TextField fx:id="ref" layoutX="468.0" layoutY="67.0" prefHeight="31.0" prefWidth="155.0" promptText="Ref" style="-fx-background-color: transparent; -fx-border-color: #d7441b; -fx-border-width: 2px 2px 2px 2px;">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </TextField>
+                        <Label layoutX="21.0" layoutY="19.0" prefHeight="27.0" prefWidth="163.0" text="      Médicament" textFill="#d7441b">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+
+
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </center>
+</BorderPane>
